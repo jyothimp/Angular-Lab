@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .contact-container {
+            width: 420px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Us Section -->
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below and we’ll get back to you as soon as possible.</p>
+
+        <!-- Contact Form -->
+        <form>
+
+            <!-- Name -->
+            <label for="name">Full Name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your full name"
+                   required
+                   maxlength="50">
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="example@email.com"
+                   required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="123-456-7890"
+                   title="Phone number must be in the format 123-456-7890"
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                   required>
+
+            <!-- Subject -->
+            <label for="subject">Subject</label>
+            <input type="text"
+                   id="subject"
+                   name="subject"
+                   placeholder="Reason for contacting us"
+                   required
+                   maxlength="100">
+
+            <!-- Message -->
+            <label for="message">Message</label>
+            <textarea id="message"
+                      name="message"
+                      placeholder="Write your message here..."
+                      rows="5"
+                      required
+                      maxlength="500"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Send Message</button>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Local Business. All rights reserved.
+    </footer>
+
+</body>
+</html>
