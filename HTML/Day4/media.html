@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            background-color: #222;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        iframe, audio {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page header -->
+    <header>
+        <h1>Media Gallery</h1>
+        <p>Explore our collection of audio and video content</p>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+
+        <!-- Video section -->
+        <section>
+            <h2>Featured Video</h2>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gbOdkaQdD94?si=TJsGd9TJVX1-hOYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Audio section -->
+        <section>
+            <h2>Audio Track</h2>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+        <p>&copy; 2025 Media Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
