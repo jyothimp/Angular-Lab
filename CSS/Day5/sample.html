@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Section paragraph styling */
+        section p::first-line {
+            font-weight: bold;               /* first line bold */
+        }
+
+        section p::first-letter {
+            color: red;                      /* first letter red */
+            font-size: 28px;                 /* larger first letter */
+        }
+
+        /* Adjacent sibling selector:
+           color ONLY the second h3 */
+        h3 + h3 {
+            color: green;
+        }
+
+        /* Link styling */
+        a {
+            color: blue;                     /* normal links */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;                  /* visited links */
+        }
+
+        a:hover {
+            text-decoration: underline;     /* hover underline */
+        }
+
+        /* First link inside the list */
+        ul li:first-child a {
+            color: red;
+        }
+
+        /* Descendant selector for spacing */
+        div ul {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section with heading and paragraphs -->
+    <section>
+        <h2>Welcome to Our Page</h2>
+
+        <p>
+            This paragraph demonstrates how CSS can style the first line
+            and the first letter differently from the rest of the text.
+        </p>
+
+        <p>
+            Another paragraph is shown here to clearly see how the same
+            styling rules apply consistently.
+        </p>
+    </section>
+
+    <!-- Container with two headings -->
+    <div>
+        <h3>First Heading</h3>
+        <h3>Second Heading</h3>
+    </div>
+
+    <!-- List of links -->
+    <div>
+        <ul>
+            <li><a href="https://www.mashupstack.com/">Home</a></li>
+            <li><a href=https://www.mashupstack.com/about>About</a></li>
+            <li><a href=https://www.mashupstack.com/contact>Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

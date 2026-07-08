@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        h3 {
+            text-align: right;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 28px;
+            color: #8b0000;
+        }
+        .welcome {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            word-spacing: 6px;
+            margin: 20px 0 30px;
+            color: #333;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid #444;
+            padding: 12px;
+            text-align: center;        /* horizontal */
+            vertical-align: middle;    /* vertical */
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Link styling */
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        a:hover {
+            color: #cc0000;
+        }
+
+        /* Icon spacing */
+        .icon {
+            margin-right: 8px;
+            color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Restaurant Name with Icon -->
+    <h3>
+        <i class="fa-solid fa-utensils icon"></i>
+      Delicia Restaurant
+    </h3>
+
+    <!-- Welcome Message -->
+    <p class="welcome">
+        Welcome to our restaurant enjoy delicious food
+    </p>
+
+    <!-- Menu Table with Icon -->
+    <table>
+        <tr>
+            <th>
+                <i class="fa-solid fa-bowl-food icon"></i>
+                Menu Item
+            </th>
+            <th>
+                <i class="fa-solid fa-indian-rupee-sign icon"></i>
+                Price
+            </th>
+        </tr>
+        <tr>
+            <td>Cream of Almond Chicken Soup</td>
+            <td>₹ 210.00</td>
+        </tr>
+        <tr>
+            <td>Jakarta Fried Rice</td>
+            <td>₹ 290.00</td>
+        </tr>
+        <tr>
+            <td>Paneer Tikka</td>
+            <td>₹ 380.00</td>
+        </tr>
+    </table>
+
+    <!-- Sample Link -->
+    <p style="text-align:center; margin-top: 20px;">
+        <a href="#">View Full Menu</a>
+    </p>
+
+</body>
+</html>

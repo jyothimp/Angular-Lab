@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Blog Post</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Blog container */
+        .blog-post {
+            width: 70%;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* Blog title */
+        .blog-post h2 {
+            margin-bottom: 5px;
+        }
+
+        /* Author */
+        .author {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph first line & first letter */
+        .blog-post p::first-line {
+            font-weight: bold;
+        }
+
+        .blog-post p::first-letter {
+            font-size: 32px;
+            color: #cc0000;
+        }
+
+        /* Quote block */
+        .quote {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            font-style: italic;
+            position: relative;
+        }
+
+        /* Add opening quote using pseudo-element */
+        .quote::before {
+            content: "“ ";
+            font-size: 30px;
+            color: #333;
+        }
+
+        /* Link styles */
+        a {
+            color: blue;                 /* normal */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;              /* visited */
+        }
+
+        a:hover {
+            text-decoration: underline; /* hover */
+        }
+
+        /* Side-by-side headings */
+        .headings h4 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /* Adjacent sibling selector */
+        h4 + h4 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blog Post -->
+    <div class="blog-post">
+
+        <h2>Understanding CSS Selectors</h2>
+        <p class="author">By Jyothi John</p>
+
+        <p>
+            Cascading Style Sheets (CSS) allow developers to control the look and feel
+            of web pages. By using selectors and pseudo-elements, styling becomes
+            more powerful and flexible.
+        </p>
+
+        <!-- Quote -->
+        <div class="quote">
+           Design is where science and art break even.
+        </div>
+
+        <p>
+            Learn more about CSS selectors on
+            <a href="https://developer.mozilla.org">MDN Web Docs</a>.
+        </p>
+
+        <!-- Headings -->
+        <div class="headings">
+            <h4>Related Posts</h4>
+            <h4>Recommended Reads</h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

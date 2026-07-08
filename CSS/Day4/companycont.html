@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Contact Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 70px; /* space for fixed header */
+            background-color: #f4f6f8;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        /* Profile section */
+        .profile-card {
+            width: 100%;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            position: relative; /* for absolute contact box */
+            overflow: auto;     /* allow scroll if needed */
+            max-height: 300px;
+            border-radius: 8px;
+        }
+
+        /* Profile image */
+        .profile-card img {
+            float: left;
+            width: 140px;
+            height: 140px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        /* Profile details */
+        .profile-details {
+            text-align: center;
+        }
+
+        .profile-details h2 {
+            margin: 0;
+        }
+
+        .profile-details h4 {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .profile-details p {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Vertical divider */
+        .divider {
+            position: absolute;
+            top: 20px;
+            right: 200px;
+            height: calc(100% - 40px);
+            border-left: 2px solid #ccc;
+        }
+
+        /* Contact info box */
+        .contact-info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 160px;
+            background-color: #ecf0f1;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        /* Clear float */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Company Contact Card</h2>
+    </header>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+
+        <!-- Profile Image -->
+        <img src="JyothiJohn.jpg" alt="Employee profile">
+
+        <!-- Profile Details -->
+        <div class="profile-details">
+            <h2>Jyothi John</h2>
+            <h4>Senior Software Engineer</h4>
+            <p>
+                Jyothi John is an experienced developer specializing in building scalable
+                web applications and mentoring junior team members.
+            </p>
+        </div>
+
+        <!-- Vertical Divider -->
+        <div class="divider"></div>
+
+        <!-- Contact Info Box -->
+        <div class="contact-info">
+            <p><strong>Phone:</strong><br>+91 8976543789</p>
+            <p><strong>Email:</strong><br>jyothi@gmail.com</p>
+        </div>
+
+        <!-- Clear Float -->
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+</html>

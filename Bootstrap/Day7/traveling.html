@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling</title>
+    <link  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-secondary">
+ <h1 class="text-center my-4 text-white">Skyway Travels</h1>
+ <div id="demo1" class="carousel slide text-center" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+        <li data-target="#demo1" data-slide-to="1"></li>
+        <li data-target="#demo1" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="Thailand.webp" class="d-block w-100" height="600" alt="Thailand">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Thailand</h5>
+                <p>Glorious beaches, jungles, and mountains.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="singapore .jpg" class="d-block w-100" height="600" alt="Singapore">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Singapore</h5>
+                <p>Futuristic skyscrapers and lush parks.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Malaysia.webp" class="d-block w-100" height="600" alt="Malaysia">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Malaysia</h5>
+                <p>Petronas Towers, beaches, and rainforests.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#demo1" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<div class="text-center my-4">
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Book Now
+    </button>
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Confirm Your Booking</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p><strong>Duration:</strong> 10 Days</p>
+                <p><strong>Price:</strong> ₹100,000 / Person</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="text-center text-white mb-4">
+    <i 
+        class="bi bi-info-circle"
+        data-toggle="tooltip"
+        title="Click Book Now to view travel package details">
+    </i>
+    More info about us
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</body>
+</html>

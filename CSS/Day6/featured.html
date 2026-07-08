@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog Section</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Blog section */
+        .blog-section {
+            width: 80%;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        /* Individual blog post */
+        .blog-post {
+            width: 33%;
+            background-color: #fafafa;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .blog-post h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Images ending with .jpg or .jpeg */
+        img[src$=".jpg"], img[src$=".jpeg"] {
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Links starting with https */
+        a[href^="https"] {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            .blog-section {
+                flex-direction: column; /* stack vertically */
+            }
+
+            .blog-post {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+
+        /* Portrait orientation */
+        @media (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Featured Blog Section -->
+    <section class="blog-section">
+
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h3>Learning Web Development</h3>
+            <img src="blog1.jpeg" alt="Web development">
+            <p>Start your journey into modern web technologies.</p>
+            <a href="https://web.dev/learn/html">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <h3>CSS Tips & Tricks</h3>
+            <img src="blog2.jpeg" alt="CSS tips">
+            <p>Improve your layouts with simple CSS techniques.</p>
+            <a href="https://web.dev/learn/css">Read More</a>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <h3>JavaScript Basics</h3>
+            <img src="blog3.jpeg" alt="JavaScript basics">
+            <p>Understand the fundamentals of JavaScript.</p>
+            <a href="https://web.dev/learn/javascript">Read More</a>
+        </div>
+
+    </section>
+
+</body>
+</html>
