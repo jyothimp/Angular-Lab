@@ -1,0 +1,13 @@
+<h1>{{productName}}</h1>
+
+<h2>{{productPrice}}</h2>
+
+<img [src]="imagepath" alt="Product Image" width="200" height="200"><br><br>
+
+<button (click)="onclick(productName)">Add to Cart</button>
+
+<br><br>
+
+<input type="text" [(ngModel)]="review" placeholder="Enter your review">
+
+<p>Review : {{ review }}</p>
