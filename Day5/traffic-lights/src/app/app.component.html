@@ -1,0 +1,30 @@
+<h2>Traffic Light Simulation</h2>
+
+@switch (currentLight) {
+  @case ('red') {
+    <h3 [ngStyle]="{'color':'red'}">
+      STOP - Light is RED
+    </h3>
+  }
+  @case ('yellow') {
+    <h3 [ngStyle]="{'color':'orange'}">
+      READY - Light is YELLOW
+    </h3>
+  }
+  @case ('green') {
+    <h3 [ngStyle]="{'color':'green'}">
+      GO - Light is GREEN
+    </h3>
+  }
+  @default {
+    <h3>Invalid Light</h3>
+  }
+}
+
+<br>
+
+<button (click)="currentLight='red'">Red</button>
+
+<button (click)="currentLight='yellow'">Yellow</button>
+
+<button (click)="currentLight='green'">Green</button>

@@ -1,0 +1,23 @@
+@if (products.length > 0) {
+
+<h2>Available Products</h2>
+
+@for (product of products; track product) {
+
+<div [ngClass]="{'sale': product.onSale}">
+
+  <h3>{{ product.name }}</h3>
+
+  <p [ngStyle]="{'color': product.price > 500 ? 'red' : 'green'}">
+    Price: ₹{{ product.price }}
+  </p>
+
+</div>
+
+}
+
+} @else {
+
+<h2>No Products Available</h2>
+
+}
