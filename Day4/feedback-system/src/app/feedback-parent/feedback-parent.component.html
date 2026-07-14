@@ -1,0 +1,11 @@
+<h2>Feedback</h2>
+
+<input type="text" [(ngModel)]="feedback" placeholder="Enter your feedback">
+<br><br>
+
+<app-feedback-child [feedback]="feedback" (confirmation)="receiveMessage($event)">
+</app-feedback-child>
+
+<br>
+
+<h3>{{ message }}</h3>
