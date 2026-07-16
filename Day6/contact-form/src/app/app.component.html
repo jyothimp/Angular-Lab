@@ -1,0 +1,45 @@
+<div class="container">
+
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <h2>Contact Form</h2>
+
+    <div>
+
+      <label>Name</label><br>
+      <input type="text" name="name" [(ngModel)]="user.name" #name="ngModel" required>
+
+      <div *ngIf="name.invalid && name.touched">
+        Name is required.
+      </div>
+
+    </div>
+
+    <br>
+
+    <div>
+
+      <label>Email</label><br>
+      <input type="email" name="email" [(ngModel)]="user.email" #email="ngModel" required email>
+
+      <div *ngIf="email.invalid && email.touched">
+
+        <div *ngIf="email.errors?.['required']">
+          Email is required.
+        </div>
+
+        <div *ngIf="email.errors?.['email']">
+          Please enter a valid email.
+        </div>
+
+      </div>
+
+    </div>
+
+    <br>
+
+    <button type="submit" [disabled]="!contactForm.valid"> Submit </button>
+
+  </form>
+
+</div>
