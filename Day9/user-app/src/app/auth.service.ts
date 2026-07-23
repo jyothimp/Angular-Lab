@@ -1,0 +1,30 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class AuthService {
+
+  private url = 'https://worksheet-product.mashupstack.com';
+
+  constructor(private http: HttpClient) { }
+
+  register(data: any) {
+    return this.http.post(`${this.url}/register`, data);
+  }
+
+  login(data: any) {
+    return this.http.post(`${this.url}/login`, data);
+  }
+
+  logout() {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`
+    });
+    return this.http.post(`${this.url}/logout`, {}, { headers });
+  }
+
+}
